@@ -3,64 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nil's Coffee - Premium Specialty Coffee">
+    <meta name="description" content="Nil's Coffee - Premium Specialty Coffee, Crafted with Passion.">
     <title>Nil's Coffee</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar -->
+    <!-- Navigation Bar -->
     <header>
         <nav>
+            <div class="logo">
+                <h1>Nil's Coffee</h1>
+            </div>
             <ul>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#events">Events</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section id="hero">
-        <h1>Welcome to Nil's Coffee</h1>
-        <p>Experience Premium Specialty Coffee, Crafted with Passion.</p>
-        <a href="#menu" class="cta-button">Discover Our Coffee</a>
+        <div class="hero-text">
+            <h1>Discover Exceptional Coffee</h1>
+            <p>Experience the finest beans, hand-brewed with precision and passion.</p>
+            <a href="#menu" class="cta-btn">Explore Our Menu</a>
+        </div>
     </section>
 
     <!-- About Us -->
     <section id="about">
-        <h2>About Us</h2>
-        <p>At Nil's Coffee, we bring you an artisanal coffee experience. From single-origin beans to manual brewing methods, we focus on quality and craftsmanship to deliver an exceptional cup.</p>
+        <h2>About Nil's Coffee</h2>
+        <p>At Nil's Coffee, we believe in quality, sustainability, and craftsmanship. Our beans are sourced from the best coffee regions around the world, and each cup is brewed manually with attention to detail.</p>
+        <img src="assets/images/about.jpg" alt="About Nil's Coffee">
     </section>
 
     <!-- Menu -->
     <section id="menu">
         <h2>Our Menu</h2>
-        <div class="menu-item">
-            <h3>Single-Origin Beans</h3>
-            <p>Explore our carefully sourced beans from the best coffee regions around the world.</p>
-        </div>
-        <div class="menu-item">
-            <h3>Manual Brew</h3>
-            <p>Experience the art of coffee making with pour-over, Aeropress, and French press methods.</p>
+        <div class="menu-cards">
+            <div class="menu-card">
+                <img src="assets/images/coffee-bean1.jpg" alt="Single-Origin Coffee">
+                <h3>Single-Origin Coffee</h3>
+                <p>Explore our curated selection of beans from around the world.</p>
+            </div>
+            <div class="menu-card">
+                <img src="assets/images/manual-brew.jpg" alt="Manual Brew">
+                <h3>Manual Brew</h3>
+                <p>Experience the art of brewing with Aeropress, French press, and pour-over.</p>
+            </div>
+            <div class="menu-card">
+                <img src="assets/images/special-drinks.jpg" alt="Signature Drinks">
+                <h3>Signature Drinks</h3>
+                <p>Try our exclusive, limited-edition coffee blends and drinks.</p>
+            </div>
         </div>
     </section>
 
     <!-- Events -->
     <section id="events">
         <h2>Upcoming Events</h2>
-        <p>Join us for coffee tastings, pop-up locations, and barista workshops. Stay tuned for updates!</p>
+        <p>Join us for coffee tastings, workshops, and pop-up events. Stay connected to our calendar for updates.</p>
+        <div class="event-calendar">
+            <div class="event-card">
+                <h4>Barista Workshop</h4>
+                <p>January 20, 2024 - Learn the secrets behind perfect brewing.</p>
+            </div>
+            <div class="event-card">
+                <h4>Coffee Tasting</h4>
+                <p>February 10, 2024 - Taste and compare our premium beans.</p>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Us -->
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>Email: info@nilcoffee.com</p>
-        <p>Follow us on Social Media</p>
-        <ul>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Facebook</a></li>
-        </ul>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="social-media">
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+        </div>
     </section>
 
     <!-- Footer -->
