@@ -1,60 +1,77 @@
-/* Reset some default styles */
+/* Reset basic styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Global styles */
+/* Body and global fonts */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
 }
 
-/* Navigation */
-header nav {
+/* Header */
+header {
     background-color: #333;
     color: white;
-    padding: 1rem;
-    text-align: center;
+    padding: 1.5rem 0;
 }
 
-header nav ul {
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+nav .logo h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+}
+
+nav ul {
     list-style: none;
+    display: flex;
 }
 
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
+nav ul li {
+    margin-left: 1.5rem;
 }
 
-header nav ul li a {
-    color: white;
+nav ul li a {
     text-decoration: none;
+    color: white;
     font-weight: bold;
 }
 
 /* Hero Section */
 #hero {
-    text-align: center;
-    background: #5D4037; /* Coffee Brown */
+    background-image: url('assets/images/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
     color: white;
-    padding: 4rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
 }
 
 #hero h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     margin-bottom: 1rem;
 }
 
 #hero p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 2rem;
 }
 
-.cta-button {
+.cta-btn {
     background-color: #D4AF37; /* Gold Accent */
     color: white;
     padding: 1rem 2rem;
@@ -63,52 +80,119 @@ header nav ul li a {
     border-radius: 30px;
 }
 
-.cta-button:hover {
+.cta-btn:hover {
     background-color: #a78727;
 }
 
-/* Section Styling */
-section {
-    padding: 3rem 2rem;
+/* About Section */
+#about {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Menu Section */
+#menu {
+    padding: 3rem 1rem;
     text-align: center;
 }
 
-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+.menu-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
-.menu-item {
-    background-color: #fff;
-    margin: 1rem 0;
-    padding: 1rem;
+.menu-card {
+    background-color: white;
     border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.menu-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.menu-card p {
+    font-size: 1rem;
+}
+
+/* Events Section */
+#events {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.event-calendar {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.event-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 250px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.menu-item h3 {
-    font-size: 1.5rem;
+/* Contact Section */
+#contact {
+    padding: 3rem 1rem;
+    background-color: #333;
+    color: white;
+    text-align: center;
 }
 
-ul {
-    list-style: none;
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
 }
 
-ul li {
-    display: inline;
-    margin: 0 10px;
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
 }
 
-ul li a {
-    text-decoration: none;
-    color: #333;
+#contact button {
+    background-color: #D4AF37;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+}
+
+#contact button:hover {
+    background-color: #a78727;
+}
+
+.social-media a {
+    color: white;
+    margin-right: 10px;
     font-weight: bold;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 1rem;
     background-color: #333;
     color: white;
+    padding: 1rem;
 }
